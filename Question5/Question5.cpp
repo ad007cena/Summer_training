@@ -6,7 +6,7 @@ int main()
     string toggle;
     int i;
     cout<<"Enter a String with only Lowercase or Uppercase Alphbets : ";
-    getline(cin,toggle);
+    cin>>toggle;
     for(i=0;i<toggle.length();i++)
     {
         if(toggle[i]>=65 && toggle[i]<=91)    //This will check for uppercase alphabets
@@ -19,7 +19,7 @@ int main()
             toggle[i]=toggle[i]-32;         //This will convert lowercase to uppercase alphabets
         }
     }
-    cout<<toggle<<endl;
+     cout<<toggle<<endl;
 }
 
     
